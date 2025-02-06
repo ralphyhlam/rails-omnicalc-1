@@ -9,4 +9,8 @@ Rails.application.routes.draw do
 
   get("/square_root/result", {:controller => "roots", :action => "root_result"})
 
+  get("/random/new", {:controller => "randoms", :action => "random"})
+
+  get("/random/result", {:controller => "randoms", :action => "random_result"})
+
 end

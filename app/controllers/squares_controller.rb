@@ -4,7 +4,7 @@ class SquaresController < ApplicationController
   end
 
   def square_result
-    @input = params.fetch("user_square").to_i
+    @input = params.fetch("user_square").to_f
     @output = @input ** (2)
 
     render({:template => "squares_template/square_result"})
